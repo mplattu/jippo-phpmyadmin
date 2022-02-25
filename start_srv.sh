@@ -1,4 +1,7 @@
 #!/bin/sh
 
-php -S localhost:8800 -t phpMyAdmin-4.8.5-all-languages/
+VERSION=5.1.3
+
+cp config.inc.php phpMyAdmin-$VERSION-all-languages/
+php -S localhost:8800 -t phpMyAdmin-$VERSION-all-languages/
 
